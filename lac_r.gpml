@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pathway xmlns="http://pathvisio.org/GPML/2013a" Name="lac operon regulation" Version="20160204">
+  <Graphics BoardWidth="476.0" BoardHeight="282.0" />
+  <DataNode TextLabel="Lactose" GraphId="aadfd" Type="Protein">
+    <Graphics CenterX="406.0" CenterY="82.0" Width="80.0" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" />
+    <Xref Database="" ID="" />
+  </DataNode>
+  <DataNode TextLabel="Camp" GraphId="af22a" Type="Protein">
+    <Graphics CenterX="212.0" CenterY="242.0" Width="80.0" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" />
+    <Xref Database="" ID="" />
+  </DataNode>
+  <DataNode TextLabel="Galactosidase" GraphId="b2fff" Type="Protein">
+    <Graphics CenterX="314.75" CenterY="142.25" Width="80.0" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" />
+    <Xref Database="" ID="" />
+  </DataNode>
+  <DataNode TextLabel="lacZ" GraphId="cc703" Type="Protein">
+    <Graphics CenterX="51.0" CenterY="143.0" Width="80.0" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" />
+    <Xref Database="" ID="" />
+  </DataNode>
+  <DataNode TextLabel="lacl" GraphId="ea08b" Type="Protein">
+    <Graphics CenterX="54.0" CenterY="35.0" Width="80.0" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" />
+    <Xref Database="" ID="" />
+  </DataNode>
+  <DataNode TextLabel="Glucose" GraphId="f809b" Type="Protein">
+    <Graphics CenterX="406.0" CenterY="196.0" Width="80.0" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" />
+    <Xref Database="" ID="" />
+  </DataNode>
+  <DataNode TextLabel="Repressor" GraphId="fefba" Type="Protein">
+    <Graphics CenterX="210.0" CenterY="36.0" Width="80.0" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" />
+    <Xref Database="" ID="" />
+  </DataNode>
+  <Interaction GraphId="id2f73da5e">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="210.0" Y="46.0" GraphRef="fefba" RelX="0.0" RelY="1.0" />
+      <Point X="211.00616399560195" Y="142.51017892246693" GraphRef="cb7f8" RelX="0.0" RelY="0.0" ArrowHead="mim-inhibition" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id39ca3fed">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="94.0" Y="35.0" GraphRef="ea08b" RelX="1.0" RelY="0.0" />
+      <Point X="170.0" Y="36.0" GraphRef="fefba" RelX="-1.0" RelY="0.0" ArrowHead="mim-necessary-stimulation" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id8e423c6">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="91.0" Y="143.0" GraphRef="cc703" RelX="1.0" RelY="0.0" />
+      <Point X="274.75" Y="142.25" GraphRef="b2fff" RelX="-1.0" RelY="0.0" ArrowHead="mim-necessary-stimulation" />
+      <Anchor Position="0.6530947700440922" Shape="None" GraphId="cb7f8" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="idbd03886">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="366.0" Y="196.0" GraphRef="f809b" RelX="-1.0" RelY="0.0" />
+      <Point X="211.6024315640103" Y="196.20100696156175" GraphRef="c8bc5" RelX="0.0" RelY="0.0" ArrowHead="mim-inhibition" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="idf98c921b">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="212.0" Y="232.0" GraphRef="af22a" RelX="0.0" RelY="-1.0" />
+      <Point X="211.00616399560195" Y="142.51017892246693" GraphRef="cb7f8" RelX="0.0" RelY="0.0" ArrowHead="mim-necessary-stimulation" />
+      <Anchor Position="0.4000342453184971" Shape="None" GraphId="c8bc5" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="f1eff">
+    <Graphics ZOrder="32771" LineThickness="1.0">
+      <Point X="406.0" Y="92.0" GraphRef="aadfd" RelX="0.0" RelY="1.0" />
+      <Point X="406.0" Y="186.0" GraphRef="f809b" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion" />
+      <Anchor Position="0.5638297872340425" Shape="None" GraphId="aa3f1" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="fc68d">
+    <Graphics ZOrder="32772" LineThickness="1.0">
+      <Point X="354.75" Y="142.25" GraphRef="b2fff" RelX="1.0" RelY="0.0" />
+      <Point X="406.0" Y="145.0" GraphRef="aa3f1" RelX="0.0" RelY="0.0" ArrowHead="mim-necessary-stimulation" />
+      <Anchor Position="0.6530947700440922" Shape="None" GraphId="e5d1b" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <InfoBox CenterX="0.0" CenterY="0.0" />
+  <Biopax />
+</Pathway>
+
