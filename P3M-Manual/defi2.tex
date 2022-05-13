@@ -1,0 +1,168 @@
+\newcommand{\Con}[1]{\mathbf{Cn}\left(#1\right)}
+\newcommand{\Pro}[1]{\mathbf{Pr}\left(#1\right)}
+\newcommand{\acti}{\mathbf{A}}
+\newcommand{\inhib}{\mathbf{I}}
+\newcommand{\size}[1]{||#1||}
+\newcommand{\produces}{\Aactiv}
+\newcommand{\consumed}{\Aprod}
+
+%\newcommand{\comma}{\allowbreak ,}
+
+\newcommand{\migtuple}
+    {\langle At\comma Ex\comma Ed\comma  \RPr\comma \RPrc\comma
+      \RAct\comma \RInh\comma {\cal B}\rangle} 
+
+\usepackage{graphicx}
+%\usepackage{subcaption}
+\usepackage[caption=false]{subfig}
+\usepackage{framed}
+\usepackage{soul} 
+%\usepackage{nohyperref}
+%\usepackage[pageref]{backref}
+\usepackage{url}% for url's in bib
+
+\newcommand{\red}[1]{{\color{red}{#1}}}
+
+\newenvironment{comment}
+  {\begin{framed}\noindent}
+  {\end{framed}}
+
+
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[inline]{enumitem}
+\usepackage[normalem]{ulem}
+\usepackage{color}
+\newtheorem{observation}{Observation}
+
+
+
+\DeclareSymbolFont{bskarr}{U}{bskarr}{m}{n}
+\DeclareFontFamily{U}{bskarr}{ }
+\DeclareFontShape{U}{bskarr}{m}{n}{<->bskarr10}{}
+\DeclareMathSymbol{\rightarrowTriangle}{\mathrel}{bskarr}{"FB}
+\DeclareMathSymbol{\rightarrowtriangle}{\mathrel}{bskarr}{"FE}
+
+
+\DeclareSymbolFont{arrows}{U}{FdSymbolC}{m}{n}
+\DeclareFontFamily{U}{FdSymbolC}{}
+
+\DeclareFontShape{U}{FdSymbolC}{m}{n}{
+    <-7.1> s * [1.0] FdSymbolC-Book
+    <7.1-> s * [1.0] FdSymbolC-Book
+}{}
+\DeclareFontShape{U}{FdSymbolC}{b}{n}{
+    <-7.1> s * [1.0] FdSymbolC-Medium
+    <7.1-> s * [1.0] FdSymbolC-Medium
+}{}
+
+
+\DeclareMathSymbol{\longrightfootline}{\mathrel}{arrows}{173}
+
+
+\newcommand{\pspace}{\textsc{PSpace}}
+\newcommand{\inftr}[1]{ {\langle {#1} \rangle}}
+\newcommand{\np}{\textsc{NP}}
+
+\def\pos{\Diamond}
+\def\U{{\cal U}}
+\newcommand{\MB}[1]{\mathbf{#1}}
+\def\A{{\cal A}}
+\def\I{{\cal I}}
+\def\M{\MB{M}}
+\def\H{\MB{H}}
+\def\T{\MB{T}}
+\def\V{\MB{V}}
+
+\def\nec{\Box}
+\def\Next{\bigcirc}
+\newcommand{\Nat}{\mathbb{N}}
+\def\eqdef{\stackrel{\rm def}{=}}
+
+\newcommand{\trans}[1]{tr\left(#1\right)}
+\newcommand{\tuple}[1]{\langle #1 \rangle}
+
+%\tikzset{->-/.style={decoration={markings, mark=at position 1. with {\arrow[fill=white]{triangle 45}}},postaction={decorate}}}
+%\tikzset{->-2/.style={decoration={markings, mark=at position 1. with {\arrow[fill=white]{triangle 45}}},postaction={decorate}}}
+%\tikzset{->-3/.style={decoration={markings, mark=at position 1. with {\arrow[fill=white]{triangle 45}}},postaction={decorate}}}
+%\tikzset{->-4/.style={decoration={markings, mark=at position 1. with {\arrow[fill=white]{triangle 45}}},postaction={decorate}}}
+%\tikzset{->-5/.style={decoration={markings, mark=at position 1. with {\arrow[fill=white]{triangle 45}}},postaction={decorate}}}
+%\tikzset{-xx>-/.style={decoration={markings, mark=at position 0. with {\arrow[thick]{|}}},postaction={decorate}}}
+%\tikzset{->/.style={decoration={markings, mark=at position 1. with {\arrow[fill=black]{triangle 45}}},postaction={decorate}}}
+
+
+\def\Aprod{\rightarrowTriangle}
+%\def\Aprod{\scalebox{.8}{
+%\begin{tikzpicture}[baseline=-3.1ex,align=center, node distance=.0cm,inner sep=0pt,outer sep=0pt]
+%\node[name=a] at (-0.4,-0.4)  {~}; 
+%\node[name=b] at (0.4,-0.4)   {~} ; 
+%\draw[->]  (a)--(b);
+%\end{tikzpicture}}}
+
+
+%\def\Ainhib{\longdashv}
+\def\Ainhib{\longrightfootline}
+%\begin{tikzpicture}[baseline=-3.1ex,align=center, node distance=.0cm,inner sep=0pt,outer sep=0pt]
+%\node[name=a] at (-0.4,-0.4)  {~}; 
+%\node[name=b] at (0.4,-0.4)   {~} ; 
+%\draw[-xx>-]  (b)--(a);
+%\end{tikzpicture}}}
+
+
+%\def\Aactiv{\scalebox{.8}{
+%\begin{tikzpicture}[baseline=-3.1ex,align=center, node distance=.0cm,inner sep=0pt,outer sep=0pt]
+%\node[name=a] at (-0.4,-0.4)  {~}; 
+%\node[name=b] at (0.4,-0.4)   {~} ; 
+%\draw[->-5]  (a)--(b);
+%\end{tikzpicture}}}
+
+\def\Aactiv{\rightarrowtriangle}
+\def\sprod{\Aprod}
+\def\abbr{\multimap}
+\def\Dia{\Diamond}
+\newcommand{\Prod}[1]{\mathbf{Pr}\left(#1\right)}
+\newcommand{\hide}[1]{}
+\newcommand{\imp}{\rightarrow}
+%\def\sprod{\scalebox{.8}{
+%\begin{tikzpicture}[baseline=-3.1ex,align=center, node distance=.0cm,inner sep=0pt,outer sep=0pt]
+%\node[name=a] at (-0.4,-0.15)  {~}; 
+%\node[name=b] at (0.4,-0.15)   {~} ; 
+%\draw[->]  (a)--(b);
+%\end{tikzpicture}}}
+
+
+
+\newcommand{\G}{\mbox{$\cal G$}}
+%\def\RAct{\stackrel{\rightarrowtriangle}{{\cal R}}}
+\def\RInh{\stackrel{\longrightfootline}{{\cal R}}}
+\def\RPr{\stackrel{\rightarrowtriangle}{{\cal P}}}
+\def\RPrc{\stackrel{\rightarrowTriangle}{{\cal P}}}
+
+\def\RAct{{{\cal R}_{\rightarrowtriangle}}}
+\def\RInh{{{\cal R}_{\longrightfootline}}}
+\def\RPr{{{\cal P}_{\rightarrowtriangle}}}
+\def\RPrc{{{\cal P}_{\rightarrowTriangle}}}
+
+\def\RAct{{\cal A}}
+\def\RInh{{\cal I}}
+\def\RPr{{\cal P}}
+\def\RPrc{{\cal C}}
+
+\newcommand{\comma}{,\allowbreak}
+
+
+\newtheorem{definition}{Definition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+\newtheorem{example}{Example}
+\newtheorem{remark}{Remark}
+
+
+\makeatletter
+\newcommand{\superimpose}[2]{%
+  {\ooalign{$#1\@firstoftwo#2$\cr\hfil$#1\@secondoftwo#2$\hfil\cr}}}
+\makeatother
+
+
+\newcommand{\Nactiv}{\mathpalette\superimpose{{\Aactiv}{\hspace{-8pt}\Ainhib}}}

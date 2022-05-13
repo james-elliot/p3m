@@ -1,0 +1,11 @@
+*~
+*.cmi
+*.cmx
+*.o
+*.a
+*.cmxa
+p3m
+example
+.depend
+*.aux
+*.log
