@@ -1,14 +1,3 @@
-(*
-Under debian required packages are:
-libxml-light-ocaml-dev
-picosat
-
-Compile first in subdirectory MLSAT with: make
-Then compile in this directory with: make
-
-Usage: parser -help
- *)
-
 let auto_image = ref false;;
 let max_clauses=10000000;;
 let max_vars=128;;
